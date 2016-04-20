@@ -1,5 +1,5 @@
 #import files
-Items={'soap':1.30,'deoderant':2.30,'razor':5.0,'toothbrush':1.50,'shaving cream':2.45,'advil':3.19}
+Items={'soap':1.30,'deoderant':2.30,'Razor':5.0,'toothbrush':1.50,'shaving cream':2.45,'advil':3.19}
 Games=['Hi Lo']
 
 
@@ -17,7 +17,7 @@ def main():
         print()
     while(True):
         ans=input('Choose game: ')
-        if ans.lower()=='hi lo':
+        if ans.lower().strip()=='hi lo':
             print()
             HiLo()
         elif ans=='2':
@@ -28,6 +28,9 @@ def main():
             main()
         elif ans=='quit':
             break
+        else:
+            print("That input is not valid. Please choose from the games above")
+
 
 def HiLo():
     print('*****Hi Lo*****')
@@ -36,14 +39,16 @@ def HiLo():
     for x in Items:
         print(x,end='     ')
     print('\n')
-    top3=sorted(Items, key=Items.get, reverse=True)[:3]
-    #print(top3)
+    top3original=sorted(Items, key=Items.get, reverse=True)[:3]
+    top3=[]
+    for x in top3original:
+        top3.append(x.lower())
     print("Enter your choices for the 3 most expensive items")
     one=input('1: ')
     two=input('2: ')
     three=input('3: ')
     print()
-    if one in top3 and two in top3 and three in top3:
+    if one.lower().strip() in top3 and two.lower().strip() in top3 and three.lower().strip() in top3:
         return print('Congratulations!! You win the Bonus!\n')
     else:
         return print('Sorry that is incorrect :(\n')
