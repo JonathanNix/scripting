@@ -1,7 +1,7 @@
-dict_main={"apple":2,"chair":25,"soap":8,"comb":1.87,"milk":5,"coffe beans":10,"lotion":12}
+#dict_main={"apple":2,"chair":25,"soap":8,"comb":1.87,"milk":5,"coffe beans":10,"lotion":12}
 import random
 
-def check_out():
+def check_out(Items):
     print("Welcome! Let's play Check-Out!")
     print("-"*30)
     print()
@@ -54,4 +54,4 @@ def check_out():
         
               
 
-check_out()
+#check_out()

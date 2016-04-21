@@ -1,7 +1,7 @@
-Items={'soap':1.30,'deoderant':2.30,'razor':5.0,'toothbrush':1.50,'shaving cream':2.45,'advil':3.19}
+#Items={'soap':1.30,'deoderant':2.30,'razor':5.0,'toothbrush':1.50,'shaving cream':2.45,'advil':3.19}
 
 
-def HiLo():
+def HiLo(Items):
     print('*****Hi Lo*****')
     print('Six grocery items are shown below. Choose the three most expensive items and win the bonus prize at the end!')
     print()
@@ -21,4 +21,4 @@ def HiLo():
         return print('Sorry that is incorrect :(')
 
 
-HiLo()
+# HiLo()
