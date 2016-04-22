@@ -1,5 +1,5 @@
 #dict_main={"apple":2,"chair":25,"soap":8,"comb":1.87,"milk":5,"coffe beans":10,"lotion":12}
-import random
+
 
 def check_out(Items):
     print("Welcome! Let's play Check-Out!")
@@ -12,7 +12,7 @@ def check_out(Items):
         if dict_main[key] < 15:
             dict_2[key]=dict_main[key]
 
-    
+    import random
     items = random.sample(dict_2.keys(),5)
     
     dict_3={}
