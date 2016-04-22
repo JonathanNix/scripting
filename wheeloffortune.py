@@ -102,7 +102,7 @@ def wheelOfFortune(dic1):
             # Give user one shot and randomly select someone new after?
             
             print("It's time to pick the value of the object.")
-            print("You have 15 seconds to try and figure out how much a/an ",w[0]," costs.",sep="")
+            print("You have 25 seconds to try and figure out how much a/an ",w[0]," costs.",sep="")
             print("The game will begin in 5 seconds.")
             time.sleep(5)
             print("Good luck!")
@@ -110,7 +110,7 @@ def wheelOfFortune(dic1):
             a = 0
             l = 1
             now = time.time()
-            future = now + 15
+            future = now + 25
             u = a3
             t = len(list1) - 1
             while time.time() < future:
