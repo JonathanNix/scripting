@@ -2,6 +2,7 @@
 
 
 def check_out(dict_main):
+    print()
     print("***** Welcome! Let's play Check-Out! *****")
     print("-"*30)
     print()
