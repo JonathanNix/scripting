@@ -1,7 +1,7 @@
 #dict_main={"apple":2,"chair":25,"soap":8,"comb":1.87,"milk":5,"coffe beans":10,"lotion":12}
 
 
-def check_out(Items):
+def check_out(dict_main):
     print("Welcome! Let's play Check-Out!")
     print("-"*30)
     print()
