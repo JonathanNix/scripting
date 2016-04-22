@@ -2,7 +2,7 @@
 
 
 def check_out(dict_main):
-    print("Welcome! Let's play Check-Out!")
+    print("***** Welcome! Let's play Check-Out! *****")
     print("-"*30)
     print()
     print("Here is how the game is played: The contestant bids on five items that are under $15 dollars each. If the total of the contestant’s bids is within $4.00 either way of the actual total of the items’ prices, then the contestant wins a brand new TELEVISION!!!")
