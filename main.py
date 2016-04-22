@@ -2,7 +2,7 @@ import screenScrape
 import HiLo
 import Check_out
 Items=screenScrape.createItemList()
-Games=['hi lo']
+Games=['Hi Lo','Check-Out']
 
 def main():
     y=True
@@ -19,14 +19,14 @@ def main():
         ans=input('Choose game: ')
         if ans.lower().strip()=='hi lo':
             HiLo.HiLo(Items)
-        elif ans=='check-out':
-        	CHeck_out.check_out(Items)
+        elif ans.lower().strip()=='check-out':
+        	Check_out.check_out(Items)
         #elif ans=='3':
         #elif ans=='4':
-        #elif ans=='quit':
+        elif ans=='quit':
             break
         else:
-            print("That input is not valid. Please choose from the games above")
+            print("That input is not valid. Please choose from the games above and make sure it is entered correctly.")
 
 
 # def HiLo():

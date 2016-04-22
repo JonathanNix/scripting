@@ -1,15 +1,22 @@
-#Items={'soap':1.30,'deoderant':2.30,'razor':5.0,'toothbrush':1.50,'shaving cream':2.45,'advil':3.19}
 
 
-def HiLo(Items):
+
+def HiLo(dict_main):
+    for key in dict_main:
+        if dict_main(key)<15:
+            dict_2[key]=dict_main[key]
+            
     print('*****Hi Lo*****')
     print('Six grocery items are shown below. Choose the three most expensive items and win the bonus prize at the end!')
     print()
-    for x in Items:
+    
+    for x in dict_2:
         print(x,end='     ')
     print('\n')
-    top3=sorted(Items, key=Items.get, reverse=True)[:3]
+    
+    top3=sorted(dict_2, key=Items.get, reverse=True)[:3]
     #print(top3)
+    
     print("Enter your choices for the 3 most expensive items")
     one=input('1: ')
     two=input('2: ')
@@ -21,4 +28,4 @@ def HiLo(Items):
         return print('Sorry that is incorrect :(')
 
 
-# HiLo()
+
