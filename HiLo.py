@@ -2,6 +2,8 @@
 
 
 def HiLo(dict_main):
+    dict_2={}
+    
     for key in dict_main:
         if dict_main(key)<15:
             dict_2[key]=dict_main[key]
