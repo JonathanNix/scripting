@@ -13,6 +13,8 @@ import time
 import random
 from random import randint
 def wheelOfFortune(dic1):
+    print("*****Wheel of Fortune*****")
+    print("-"*30)
     x = int(input("How many people are playing the game? "))
     list1 = []
 
@@ -23,11 +25,6 @@ def wheelOfFortune(dic1):
         y1 = input("What is the name of the player? ")
         list1.append(y1)
         x = x - 1
-
-
-
-
-
     a = ""
 
     if a1 == 1:
@@ -46,9 +43,9 @@ def wheelOfFortune(dic1):
             while time.time() < future:
                 a = int(input("What is your guess? "))
                 if a > y:
-                    print("Your guess is too high!")
+                    print("Your guess is to high!")
                 elif a < y:
-                    print("Your guess is too low!")
+                    print("Your guess is to low!")
                 else:
                     print("Thats right!")
                     a = y
@@ -119,9 +116,9 @@ def wheelOfFortune(dic1):
                     print("It's your turn, ",list1[u],"!",sep="")
                     a = int(input("What is your guess? "))
                     if a > y:
-                        print("That guess is too high!")
+                        print("That guess is to high!")
                     elif a < y:
-                        print("That guess is too low!")
+                        print("That guess is to low!")
                     else:
                         print("That's right!")
                         break
@@ -141,6 +138,6 @@ def wheelOfFortune(dic1):
     else:
         print("Find people!")
 
-        
-# dic1 = {"Xbox 360":150,"Xbox one":350,"Playstation 4":300,"Playstation 3":150,"Dark Souls 3 Collecters Edition":130,"NBA 2K17 Legendary Edition":80,"Uncharted 4":60,"Fallout 4":40}
-# wheelOfFortune(dic1)
+    
+dic1 = {"Xbox 360":150,"Xbox one":350,"Playstation 4":300,"Playstation 3":150,"Dark Souls 3 Collecters Edition":130,"NBA 2K17 Legendary Edition":80,"Uncharted 4":60,"Fallout 4":40}
+wheelOfFortune(dic1)
