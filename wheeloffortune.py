@@ -46,9 +46,9 @@ def wheelOfFortune(dic1):
             while time.time() < future:
                 a = int(input("What is your guess? "))
                 if a > y:
-                    print("Your guess is to high!")
+                    print("Your guess is too high!")
                 elif a < y:
-                    print("Your guess is to low!")
+                    print("Your guess is too low!")
                 else:
                     print("Thats right!")
                     a = y
@@ -119,9 +119,9 @@ def wheelOfFortune(dic1):
                     print("It's your turn, ",list1[u],"!",sep="")
                     a = int(input("What is your guess? "))
                     if a > y:
-                        print("That guess is to high!")
+                        print("That guess is too high!")
                     elif a < y:
-                        print("That guess is to low!")
+                        print("That guess is too low!")
                     else:
                         print("That's right!")
                         break
