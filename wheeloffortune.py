@@ -139,5 +139,5 @@ def wheelOfFortune(dic1):
         print("Find people!")
 
     
-dic1 = {"Xbox 360":150,"Xbox one":350,"Playstation 4":300,"Playstation 3":150,"Dark Souls 3 Collecters Edition":130,"NBA 2K17 Legendary Edition":80,"Uncharted 4":60,"Fallout 4":40}
-wheelOfFortune(dic1)
+#dic1 = {"Xbox 360":150,"Xbox one":350,"Playstation 4":300,"Playstation 3":150,"Dark Souls 3 Collecters Edition":130,"NBA 2K17 Legendary Edition":80,"Uncharted 4":60,"Fallout 4":40}
+#wheelOfFortune(dic1)
