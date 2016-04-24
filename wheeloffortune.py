@@ -31,7 +31,7 @@ def wheelOfFortune(dic1):
         try:
             y = w[1]
             print("It's time to pick the value of a/an ",w[0],".",sep="")
-            print("You have 15 seconds to try and figure out what the value is.")
+            print("You have 15 seconds to try and figure out what the price is.")
             print("The game will begin in 5 seconds.")
             time.sleep(5)
             print("Good luck!")
@@ -139,5 +139,5 @@ def wheelOfFortune(dic1):
         print("Find people!")
 
     
-#dic1 = {"Xbox 360":150,"Xbox one":350,"Playstation 4":300,"Playstation 3":150,"Dark Souls 3 Collecters Edition":130,"NBA 2K17 Legendary Edition":80,"Uncharted 4":60,"Fallout 4":40}
-#wheelOfFortune(dic1)
+dic1 = {"Xbox 360":150,"Xbox one":350,"Playstation 4":300,"Playstation 3":150,"Dark Souls 3 Collecters Edition":130,"NBA 2K17 Legendary Edition":80,"Uncharted 4":60,"Fallout 4":40}
+wheelOfFortune(dic1)
