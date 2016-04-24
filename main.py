@@ -1,6 +1,7 @@
 import screenScrape
 import HiLo
 import Check_out
+import wheeloffortune
 Items=screenScrape.createItemList()
 Games=['Hi Lo','Check-Out','Wheel of Fortune']
 
