@@ -30,7 +30,7 @@ def wheelOfFortune(dic1):
     if a1 == 1:
         try:
             y = w[1]
-            print("It's time to pick the value of a/an ",w[0],".",sep="")
+            print("It's time to pick the price of a/an ",w[0],".",sep="")
             print("You have 15 seconds to try and figure out what the price is.")
             print("The game will begin in 5 seconds.")
             time.sleep(5)
