@@ -9,6 +9,7 @@ def HiLo(dict_main):
             dict_2[key]=dict_main[key]
             
     print('*****Hi Lo*****')
+    print('-'*30)
     print('Six grocery items are shown below. Choose the three most expensive items and win the bonus prize at the end!')
     print()
     
