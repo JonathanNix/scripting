@@ -16,6 +16,9 @@ def main():
         print(x,Games[x])
         print()
     while(True):
+        print()
+        print("-"*30)
+        print()
         ans=input('Choose game: ')
         if ans.lower().strip()=='hi lo':
             HiLo.HiLo(Items)
