@@ -14,7 +14,7 @@ def main():
     print('Enter "quit" to end game')
     print()
     for x in range(len(Games)):
-        print(x,Games[x])
+        print(x+1,Games[x])
         print()
     while(True):
         print()
