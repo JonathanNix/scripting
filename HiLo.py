@@ -1,25 +1,27 @@
-
-
-
 def HiLo(dict_main):
-    dict_2={}
-    
-    for key in dict_main:
-        if dict_main(key)<15:
-            dict_2[key]=dict_main[key]
-            
     print('*****Hi Lo*****')
     print('-'*30)
     print('Six grocery items are shown below. Choose the three most expensive items and win the bonus prize at the end!')
     print()
+
+    dict_2={}
+    for key in dict_main:
+        if dict_main[key] < 15:
+            dict_2[key]=dict_main[key]
+
+    import random
+    items = random.sample(dict_2.keys(),6)
+
+    totaldictionary={}
+    for x in items:
+        totaldictionary[x]=dict_main[x]
+
+    for x in range(len(items)):
+        print(x+1,items[x])
     
-    for x in dict_2:
-        print(x,end='     ')
-    print('\n')
-    
-    top3=sorted(dict_2, key=Items.get, reverse=True)[:3]
-    #print(top3)
-    
+    top3=sorted(totaldictionary, key=dict_main.get, reverse=True)[:3]
+
+    print()
     print("Enter your choices for the 3 most expensive items")
     one=input('1: ')
     two=input('2: ')
@@ -29,6 +31,5 @@ def HiLo(dict_main):
         return print('Congratulations!! You win the Bonus!')
     else:
         return print('Sorry that is incorrect :(')
-
 
 
